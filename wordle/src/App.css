@@ -1,0 +1,57 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.key.letter {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+.key.special {
+  background-color: #d1d1d1;
+  color: #444;
+  grid-column: span 2; 
+  width: auto; 
+}
+
+.key:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.key.typed {
+  background-color: #545555; 
+  color: #ffffff;
+}
+
+.display {
+  font-size: 24px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
