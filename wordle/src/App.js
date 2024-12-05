@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Keyboard from './Keyboard';
 import './App.css';
 
-
 const App = () => {
   const [input, setInput] = useState('');
 
@@ -18,7 +17,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="display">{input}</div>
+      <div className="header">
+        <div className="display">{input}</div>
+        <div className="title">Website Title</div>
+      </div>
       <Keyboard onClick={handleKeyPress} />
     </div>
   );
