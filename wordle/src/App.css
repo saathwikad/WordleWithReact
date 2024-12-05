@@ -1,3 +1,19 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 20px;
+}
+
+
 .keyboard {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -22,17 +38,11 @@
   border-radius: 5px;
 }
 
-.key.letter {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-
 .key.special {
   background-color: #d1d1d1;
   color: #444;
-  grid-column: span 2; 
-  width: auto; 
+  grid-column: span 2;
+  width: auto;
 }
 
 .key:hover {
@@ -41,7 +51,7 @@
 }
 
 .key.typed {
-  background-color: #545555; 
+  background-color: #545555;
   color: #ffffff;
 }
 
